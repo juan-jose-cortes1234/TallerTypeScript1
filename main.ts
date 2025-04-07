@@ -1,7 +1,7 @@
 import {series} from "./data"
 import {Serie} from "./serie" 
 const Tbody: HTMLElement = document.getElementById('seriest')!;
-const cardBody : HTMLElement = document.getElementById('cardBody')!;
+
 function renderSeriesInTable(series: Serie[]): void {
     series.forEach(c => {
       
@@ -9,10 +9,7 @@ function renderSeriesInTable(series: Serie[]): void {
       let tdId = document.createElement("td");
       tdId.innerHTML = `${c.id}`;
       let tdName = document.createElement("td");
-      let spanElement = document.createElement("span");
-      spanElement.onclick = () => {c.showCard(cardBody)};
-      spanElement.textContent = c.name
-      tdName.appendChild(spanElement);
+      tdName.innerHTML = `${c.name}`;
       let tdChannel = document.createElement("td");
       tdChannel.innerHTML = `${c.channel}`;
       let tdSeasons = document.createElement("td");

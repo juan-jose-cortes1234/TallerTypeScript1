@@ -19,13 +19,5 @@ export class Serie {
     }
 
    
-    public showCard(cardbody : HTMLElement)
-    {
-        
-        cardbody.innerHTML = `<img src = ${this.imgLink} alt="Poster">
-                                <p> ${this.description}</p>
-                                <a href = ${this.seriesLink} target = "_blank"> Haga click acá para conocer más </a>`;
-        
-        
-    }
+    
 }
