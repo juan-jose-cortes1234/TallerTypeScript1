@@ -10,6 +10,7 @@ function renderSeriesInTable(series: Serie[]): void {
       tdId.innerHTML = `${c.id}`;
       let tdName = document.createElement("td");
       tdName.innerHTML = `${c.name}`;
+      tdName.style.color= "blue";
       let tdChannel = document.createElement("td");
       tdChannel.innerHTML = `${c.channel}`;
       let tdSeasons = document.createElement("td");

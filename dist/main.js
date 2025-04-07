@@ -7,6 +7,7 @@ function renderSeriesInTable(series) {
         tdId.innerHTML = "".concat(c.id);
         var tdName = document.createElement("td");
         tdName.innerHTML = "".concat(c.name);
+        tdName.style.color = "blue";
         var tdChannel = document.createElement("td");
         tdChannel.innerHTML = "".concat(c.channel);
         var tdSeasons = document.createElement("td");
